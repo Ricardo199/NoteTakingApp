@@ -1,71 +1,55 @@
 # NoteTakingApp
 
-A clean, lightweight Android note-taking application built with **Kotlin** and **Jetpack Compose**. NoteTakingApp lets you quickly capture, review, and update your notes with a modern Material Design 3 interface.
+NoteTakingApp is an Android application for creating and managing personal notes. It is built with Kotlin and Jetpack Compose, with a simple interface for creating, viewing, editing, and deleting notes.
 
----
+## Core Functionality
 
-## Features
+- Create notes with a title and content
+- View notes in a scrollable list
+- Open a note to edit existing content
+- Delete notes from the list
+- Store the current date for each note
 
-- 📝 **Create notes** – Add a new note with a title and body in seconds
-- 📋 **Browse notes** – Scrollable list of all your notes with title, preview, and date
-- ✏️ **Edit notes** – Tap any note to update its title or content
-- 🗑️ **Delete notes** – Remove notes you no longer need
-- 📅 **Auto-dated** – Each note is automatically stamped with the current date
+## Technology
 
----
-
-## Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Language | Kotlin |
-| UI toolkit | Jetpack Compose |
-| Design system | Material Design 3 |
-| Navigation | Navigation Compose |
-| State management | ViewModel + `mutableStateListOf` |
-| Build system | Gradle (Kotlin DSL) |
-
----
+- Kotlin
+- Jetpack Compose
+- Material 3
+- Android ViewModel
+- Navigation Compose
+- Gradle (Kotlin DSL)
 
 ## Requirements
 
-- Android Studio Hedgehog (2023.1.1) or later
-- Android SDK 34+
+- Android Studio (recent stable release)
+- Android SDK 34 or higher
 - JDK 11
 
----
+## Build and Run
 
-## Getting Started
+1. Clone the repository:
 
-1. **Clone the repository**
    ```bash
    git clone https://github.com/Ricardo199/NoteTakingApp.git
    ```
 
-2. **Open in Android Studio**
-   - Select *File → Open* and navigate to the cloned directory.
-
-3. **Run the app**
-   - Connect a physical device or start an emulator (API 34+).
-   - Click the **Run** button (▶) or press `Shift + F10`.
-
----
+2. Open the project in Android Studio.
+3. Sync Gradle dependencies.
+4. Run the app on an emulator or physical device.
 
 ## Project Structure
 
-```
-app/src/main/java/.../
-├── MainActivity.kt      # Entry point; hosts the navigation graph and note list screen
-├── Navigation.kt        # NavHost setup and route definitions
+```text
+app/src/main/java/com/example/ricardoburgos_comp304sec001_lab01/
+├── MainActivity.kt      # App entry point and main list UI
+├── Navigation.kt        # Navigation graph and routes
 ├── Routes.kt            # Route constants
-├── Note.kt              # Note data class (Parcelable)
-├── ViewModel.kt         # NotesViewModel – add, get, update, delete notes
-├── CreateNotes.kt       # Create-note screen
-└── EditNote.kt          # Edit-note screen
+├── Note.kt              # Note data model
+├── ViewModel.kt         # Note state and CRUD operations
+├── CreateNotes.kt       # Create note screen
+└── EditNote.kt          # Edit note screen
 ```
-
----
 
 ## License
 
-This project is licensed under the terms of the [LICENSE](LICENSE) file included in this repository.
+See [LICENSE](LICENSE).
