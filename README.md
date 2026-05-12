@@ -23,7 +23,7 @@ NoteTakingApp is an Android application for creating and managing personal notes
 
 - Android Studio (recent stable release)
 - Android SDK 34 or higher
-- JDK 11
+- JDK 17 or higher
 
 ## Build and Run
 
